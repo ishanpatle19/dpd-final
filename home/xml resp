@@ -1,0 +1,239 @@
+<OrderSubmitRequest>
+<Version>0.6</Version>
+<MerchantId>4067</MerchantId>
+<MerchantName>Nine Lives Publishing, LLC</MerchantName>
+<MerchantToken>63f0ecdbcf26e592728a783d23d8faed</MerchantToken>
+<OrderList>
+    <Order>
+        <OrderNumber>02</OrderNumber> 
+        <ReferenceNumber/>
+        <ShippingMethod>GROUND</ShippingMethod>
+        <ShippingOptions>
+            <Insurance/>
+            <CashOnDelivery/>
+            <DeclaredValue/>
+            <SignatureRequired/>
+        </ShippingOptions>
+        <Comments/>
+        <ShippingAddress>
+            <FirstName>Test</FirstName>
+            <LastName>Order</LastName>
+            <Company/>
+            <Address1>Test Address</Address1>
+            <Address2/>
+            <City>string</City>
+            <State>MI</State>
+            <PostalCode>000000</PostalCode>
+            <Country>US</Country>
+            <Phone>999999999</Phone>
+            <Email>test@gmail.com</Email>
+        </ShippingAddress>
+        <BillingAddress>
+            <FirstName>Test</FirstName>
+            <LastName>Order</LastName>
+            <Company/>
+            <Address1>Test Address</Address1>
+            <Address2/>
+            <City>string</City>
+            <State>MI</State>
+            <PostalCode>000000</PostalCode>
+            <Country>US</Country>
+            <Phone>999999999</Phone>
+            <Email>test@gmail.com</Email>
+        </BillingAddress>
+        <ItemList>
+            <Item>
+            <Sku>780960105502</Sku>
+            <Quantity>1</Quantity>
+            </Item>
+        </ItemList>
+    </Order>
+</OrderList>
+</OrderSubmitRequest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cascaded
+
+
+    root = gfg.Element("OrderSubmitRequest")
+
+    m1 = gfg.Element("Version")
+    m1.text = "0.6"
+    root.append(m1)
+    
+    m2 = gfg.Element("MerchantId")
+    m2.text = "4067"
+    root.append(m2)
+    
+    m3 = gfg.Element("MerchantName")
+    m3.text = "Nine Lives Publishing, LLC"
+    root.append(m3)
+    
+    m4 = gfg.Element("MerchantToken")
+    m4.text = "63f0ecdbcf26e592728a783d23d8faed"
+    root.append(m4)
+    
+    m5 = gfg.Element("OrderList")
+    root.append(m5)
+    
+    m6 = gfg.SubElement(m5, "Order")
+    root.append(m6)
+    
+    m7 = gfg.SubElement(m6, "OrderNumber")
+    m7.text = "79"
+    m6.append(m7)
+    
+    m8 = gfg.Element("ReferenceNumber")
+    m6.append(m8)
+    
+    m9 = gfg.Element("ShippingMethod")
+    m9.text = "USPS_MEDIA"
+    m6.append(m9)
+    
+    m10 = gfg.Element("ShippingOptions")
+    m6.append(m10)
+
+    m11 = gfg.SubElement(m10, "Insurance")
+    m10.append(m11)
+    
+    m12 = gfg.SubElement(m10,"CashOnDelivery")
+    m10.append(m12)
+    
+    m13 = gfg.SubElement(m10,"DeclaredValue")
+    m10.append(m13)
+    
+    m14 = gfg.SubElement(m10,"SignatureRequired")
+    m10.append(m14)
+    
+    m16 = gfg.SubElement(m6, "Comments")
+    m6.append(m16) 
+    
+    m17 = gfg.SubElement(m6, "ShippingAddress")
+    m6.append(m17)
+    
+    m18 = gfg.SubElement(m17, "FirstName")
+    m18.text = "Test2"
+    m17.append(m18)
+
+    m19 = gfg.SubElement(m17,"LastName")
+    m19.text = "Order2"
+    m17.append(m19)
+
+    m20 = gfg.SubElement(m17,"Company")
+    m17.append(m20)
+
+    m21 = gfg.SubElement(m17,"Address1")
+    m21.text = "Test Address2"
+    m17.append(m21)
+
+    m22 = gfg.SubElement(m17,"Address2")
+    m17.append(m22)
+
+    m50 = gfg.SubElement(m17,"City")
+    m50.text = "Charlevoix2"
+    m17.append(m50)
+    
+    m23 = gfg.SubElement(m17,"State")
+    m23.text = "MI"
+    m17.append(m23)
+
+    m24 = gfg.SubElement(m17,"PostalCode") 
+    m24.text = "000001"
+    m17.append(m24)
+
+    m25 = gfg.SubElement(m17,"Country")
+    m25.text = "US"
+    m17.append(m25)
+
+    m26 = gfg.SubElement(m17,"Phone") 
+    m26.text = "999999999"
+    m17.append(m26)
+
+    m27 = gfg.SubElement(m17,"Email") 
+    m27.text = "test2@gmail.com"
+    m17.append(m27)
+
+    m29 = gfg.SubElement(m6, "BillingAddress") 
+    m6.append(m29)
+
+    m30 = gfg.SubElement(m29, "FirstName") 
+    m30.text = "Test2"
+    m29.append(m30)
+
+    m31 = gfg.SubElement(m29,"LastName")
+    m31.text = "Order2"
+    m29.append(m31)
+
+    m32 = gfg.SubElement(m29,"Company") 
+    m29.append(m32)
+
+    m33 = gfg.SubElement(m29,"Address1") 
+    m33.text = "Test Address"
+    m29.append(m33)
+
+    m34 = gfg.SubElement(m29,"Address2") 
+    m29.append(m34)
+
+    m35 = gfg.SubElement(m29,"City") 
+    m35.text = "string"
+    m29.append(m35)
+
+    m36 = gfg.SubElement(m29,"State") 
+    m36.text = "MI"
+    m29.append(m36)
+
+    m37 = gfg.SubElement(m29,"PostalCode")  
+    m37.text = "000001"
+    m29.append(m37)
+
+    m38 = gfg.SubElement(m29,"Country")
+    m38.text = "US"
+    m29.append(m38)
+
+    m39 = gfg.SubElement(m29,"Phone")
+    m39.text = "999999999"
+    m29.append(m39)
+
+    m40 = gfg.SubElement(m29,"Email") 
+    m40.text = "test2@gmail.com"
+    m29.append(m40)
+
+    m42 = gfg.SubElement(m6,"ItemList") 
+    m6.append(m42)
+
+    m43 = gfg.SubElement(m42,"Item") 
+    m42.append(m43)
+
+    m44 = gfg.SubElement(m42,"Sku")
+    m44.text = "780960105502"
+    m42.append(m44)
+
+    m45 = gfg.SubElement(m42,"Quantity") 
+    m45.text = "1"
+    m42.append(m45)
+
+    m48 = gfg.Element("Order") 
+    root.append(m48)
+
+    m49 = gfg.Element("OrderList") 
+    root.append(m49)
+    
